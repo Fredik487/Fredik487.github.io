@@ -1,0 +1,282 @@
+/*Telephone vertical*/
+@media screen and (min-width: 320px) and (max-width: 495px){
+	.container_nav {
+    	width:100%;
+    	text-align: center;
+	}
+	.container_nav li {
+    	margin-right: 13px;
+    }
+	.container_title_h3 {
+    	width: 100%;
+    	text-align: center;
+	}
+	.leftLine, .rightLine {
+    	display: none;
+	}
+	.title_h3 {
+		margin: 0 auto;
+	}
+
+
+	.section_1 {
+	    height: 600px;
+	    padding: 50px 0;
+	}
+	.container_blocks_section_1 {
+		width: 100%;
+	    height: 600px;
+	    display: block;
+	    padding:0;
+	    margin: 0 auto;
+	}
+
+
+	.section_2 {
+    	height: 990px;
+    	padding: 65px 0 0;
+    }
+	.container_article_section_2 {
+		width: 100%;
+		height: 925px;
+	    margin: 0 auto;
+	    display: block;
+    }
+    .article_1, .article_2 {
+    	margin: 0 auto;
+    	margin-bottom: 75px;
+    }
+
+
+    .section_3 {
+    	height: 355px;
+    	padding: 60px 30px;
+    }
+    .container_block_section_3 {
+    	height: 235px;
+    	width: 100%;
+    }
+    .hr_section_3 {
+    	width: 100%;
+    }
+
+
+    .section_4 {
+    	height: 1195px;
+    	padding: 55px 0 0;
+	}
+	.container_foto_section_4{
+		display: block;
+		width: 100%;
+	}
+	.article_1_section_4,
+	.article_2_section_4,
+	.article_3_section_4{
+		height: 330px;
+		width: 250px;;
+		margin: 0 auto 50px;
+	}
+	.h2_section_4{
+		text-align: center;
+	}
+	.hr_section_4{
+		width: 100%;
+	}
+	
+
+	.section_5 {
+    	height: 605px;
+		padding: 50px 30px 60px;
+	}
+	.container_articles_section_5{
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+	.article_1_section_5{
+		margin-bottom: 80px;
+	}
+	.hr_section_5{
+		width: 100%;
+	}
+
+
+	.section_6{
+		height: 560px;
+	}
+	.container_foto_section_6 {
+	    width: 100%;
+	    display: block;
+	}
+	.foto_section_6{
+		width: 265px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	.container_text_section_6{
+	    width: 265px;
+	    margin: 0 auto;
+	}
+   
+	
+	.section_7 {
+    	height: 295px;
+	}
+   	.container_img {
+	    width: 280px;
+	    height: 100px;
+	    display: grid;
+	    grid-template-columns: repeat(2,120px);
+	    grid-template-rows: 30px 30px;
+	    grid-gap: 40px;
+	}
+}
+/*and horizontal*/
+@media screen and (min-width: 496px) and (max-width: 650px){
+	.section_1 {
+	    height: 600px;
+	    padding: 50px 0;
+	}
+	.container_blocks_section_1 {
+	    width: 480px;
+	    height: 600px;
+	    display: block;
+	    padding:0;
+	    margin: 0 auto;
+	}
+
+
+	.section_2 {
+    	height: 990px;
+    	padding: 65px 0 0;
+    }
+	.container_article_section_2 {
+		width: 100%;
+		height: 925px;
+	    margin: 0 auto;
+	    display: block;
+    }
+    .article_1, .article_2 {
+    	margin: 0 auto;
+    	margin-bottom: 75px;
+    }
+
+
+    .section_3 {
+    	height: 355px;
+    	padding: 60px 30px;
+    }
+    .container_block_section_3 {
+    	height: 235px;
+    	width: 100%;
+    }
+    .hr_section_3 {
+    	width: 100%;
+    }
+
+
+    .section_4 {
+    	height: 1195px;
+    	padding: 55px 0 0;
+	}
+	.container_foto_section_4{
+		display: block;
+		width: 100%;
+	}
+	.article_1_section_4,
+	.article_2_section_4,
+	.article_3_section_4{
+		height: 330px;
+		width: 250px;;
+		margin: 0 auto 50px;
+	}
+	.h2_section_4{
+		text-align: center;
+	}
+	.hr_section_4{
+		width: 100%;
+	}
+	
+
+	.section_5{
+		height: 520px;
+		padding: 50px 30px 60px;
+	}
+	.container_articles_section_5{
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+	.article_1_section_5{
+		margin-bottom: 80px;
+	}
+	.hr_section_5{
+		width: 100%;
+	}
+
+
+	.section_6{
+		height: 560px;
+	}
+	.container_foto_section_6 {
+	    width: 100%;
+	    display: block;
+	}
+	.foto_section_6{
+		width: 265px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	.container_text_section_6{
+	    width: 265px;
+	    margin: 0 auto;
+	}
+   
+	
+	.section_7 {
+    	height: 295px;
+	}
+   	.container_img {
+	    width: 280px;
+	    height: 100px;
+	    display: grid;
+	    grid-template-columns: repeat(2,120px);
+	    grid-template-rows: 30px 30px;
+	    grid-gap: 40px;
+	}
+
+
+}
+
+/*tablet vertical*/
+@media screen and (min-width: 768px) and (max-width: 800px){
+	.container{
+		width: 100%;
+		margin: 0;
+	}
+	
+}
+/*and horizontal*/
+@media screen and (min-width: 1024px){
+}
+
+
+/*desktop*/
+@media screen and (min-width: 1200px) and (max-width: 1366px){
+	.container{
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+@media screen and (min-width: 1367px) and (max-width: 1600px){
+	.container{
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+@media screen and (min-width:1600px){
+	.container{
+		width: 60%;
+		margin: 0 auto;
+	}
+}
