@@ -49,10 +49,10 @@ html{scroll-behavior: smooth;}
 	margin-right: 35px;
     letter-spacing: 0.5px;
 }
-.menu__items:hover{
+.menu__items:hover a{
 	border-bottom: 2px solid #fed136;
 }
-.menu__items:first-child{
+#active{
 	border-bottom: 2px solid #fed136;
 }
 .menu__items:last-child{
@@ -597,6 +597,7 @@ html{scroll-behavior: smooth;}
 	font-family: "Monstserrat";
 	font-size: 40px;
 	text-transform: uppercase;
+	margin-bottom: 0;
 }
 .contacts__h4{
 	color: #777;
@@ -650,9 +651,7 @@ form input{
 	grid-row:4/5;
 	grid-column:1/3;
 	margin: 0 auto;
-	cursor: pointer;
-	
-	
+	cursor: pointer;	
 }
 .contacts__send a{
 	color: #fff;
@@ -672,7 +671,6 @@ form input{
 	height: 90px;
 	background: #fff;
 	padding: 20px 0 30px;
-	
 }
 .container-footer{
 	width: 940px;
