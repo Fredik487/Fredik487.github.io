@@ -19,7 +19,7 @@ html{scroll-behavior: smooth;}
 
 .header{
 	height: 700px;
-	background: url(../images/Bg-Header.png) no-repeat 0% 0%;
+	background: url(../images/Bg-Header-min.png) no-repeat 0% 0%;
 	padding-top: 35px;
 }
 .container-menu{
@@ -160,17 +160,17 @@ html{scroll-behavior: smooth;}
 	margin: 0 auto
 }
 .aside__icon-1{
-	background: url(../images/Services_img/icon-basket.png) no-repeat 50% 50%;
+	background: url(../images/Services_img/icon-basket-min.png) no-repeat 50% 50%;
 	border: 4px solid #fed136;
 	border-radius: 50%;
 }
 .aside__icon-2{
-	background: url(../images/Services_img/icon-laptop.png) no-repeat 50% 50%;
+	background: url(../images/Services_img/icon-laptop-min.png) no-repeat 50% 50%;
 	border: 4px solid #fed136;
 	border-radius: 50%;
 }
 .aside__icon-3{
-	background: url(../images/Services_img/icon-locked.png) no-repeat 50% 50%;
+	background: url(../images/Services_img/icon-locked-min.png) no-repeat 50% 50%;
 	border: 4px solid #fed136;
 	border-radius: 50%;
 }
@@ -241,22 +241,22 @@ html{scroll-behavior: smooth;}
 	height: 300px;
 }
 .work-1__foto{
-	background: url(../images/Portfolio_img/Portfolio-item-1.png) no-repeat 50% 100%;
+	background: url(../images/Portfolio_img/Portfolio-item-1-min.png) no-repeat 50% 100%;
 }
 .work-2__foto{
-	background: url(../images/Portfolio_img/Portfolio-item-2.png) no-repeat 50% 0%;
+	background: url(../images/Portfolio_img/Portfolio-item-2-min.png) no-repeat 50% 0%;
 }
 .work-3__foto{
-	background: url(../images/Portfolio_img/Portfolio-item-3.png) no-repeat 50% 100%;
+	background: url(../images/Portfolio_img/Portfolio-item-3-min.png) no-repeat 50% 100%;
 }
 .work-4__foto{
-	background: url(../images/Portfolio_img/Portfolio-item-4.png) no-repeat 50% 100%;
+	background: url(../images/Portfolio_img/Portfolio-item-4-min.png) no-repeat 50% 100%;
 }
 .work-5__foto{
-	background: url(../images/Portfolio_img/Portfolio-item-5.png) no-repeat 50% 100%;
+	background: url(../images/Portfolio_img/Portfolio-item-5-min.png) no-repeat 50% 100%;
 }
 .work-6__foto{
-	background: url(../images/Portfolio_img/Portfolio-item-6.png) no-repeat 50% 100%;
+	background: url(../images/Portfolio_img/Portfolio-item-6-min.png) no-repeat 50% 100%;
 }
 .work__name{
 	font-family: "Monstserrat";
@@ -376,16 +376,16 @@ html{scroll-behavior: smooth;}
 	margin: auto 0 0;
 }
 .event-1__foto{
-	background: url(../images/Ubout-Us_img/About-Us_item-1.png) 20% 100% / cover;
+	background: url(../images/Ubout-Us_img/About-Us_item-1-min.png) 20% 100% / cover;
 }
 .event-2__foto{
-	background: url(../images/Ubout-Us_img/About-Us_item-2.png) 30% 100% / cover;
+	background: url(../images/Ubout-Us_img/About-Us_item-2-min.png) 30% 100% / cover;
 }
 .event-3__foto{
-	background: url(../images/Ubout-Us_img/About-Us_item-3.png) 35% 100% / cover;
+	background: url(../images/Ubout-Us_img/About-Us_item-3-min.png) 35% 100% / cover;
 }
 .event-4__foto{
-	background: url(../images/Ubout-Us_img/About-Us_item-4.png) 35% 100% / cover;
+	background: url(../images/Ubout-Us_img/About-Us_item-4-min.png) 35% 100% / cover;
 }
 .container-story-continues{
     margin-bottom: 0;
@@ -464,13 +464,13 @@ html{scroll-behavior: smooth;}
 	background: white;
 }
 .team-human__foto-1{
-	background: url(../images/Our-team_img/human-1.jpg) no-repeat 50% 100% / cover;
+	background: url(../images/Our-team_img/human-1-min.jpg) no-repeat 50% 100% / cover;
 }
 .team-human__foto-2{
-	background: url(../images/Our-team_img/human-2.jpg) no-repeat 50% 100% / cover;
+	background: url(../images/Our-team_img/human-2-min.jpg) no-repeat 50% 100% / cover;
 }
 .team-human__foto-3{
-	background: url(../images/Our-team_img/human-3.jpg) no-repeat 50% 100% / cover;
+	background: url(../images/Our-team_img/human-3-min.jpg) no-repeat 50% 100% / cover;
 }
 
 .name{
@@ -563,22 +563,22 @@ html{scroll-behavior: smooth;}
 .logo-1{
 	height: 42px;
 	width: 230px;
-	background: url(../images/Logos/Logos_envato.png) no-repeat 100% 100% / 100%;	
+	background: url(../images/Logos/Logos_envato-min.png) no-repeat 100% 100% / 100%;	
 }
 .logo-2{
 	height: 42px;
 	width: 190px;
-	background: url(../images/Logos/Logos_word_press.png) 100% 100% / cover;
+	background: url(../images/Logos/Logos_word_press-min.png) 100% 100% / cover;
 }
 .logo-3{
 	height: 42px;
 	width: 135px;
-	background: url(../images/Logos/Logos_tuts+.png) 100% 100% / cover;
+	background: url(../images/Logos/Logos_tuts+-min.png) 100% 100% / cover;
 }
 .logo-4{
 	height: 42px;
 	width: 170px;
-	background: url(../images/Logos/Logos_microlancer.png) 100% 100% / cover;
+	background: url(../images/Logos/Logos_microlancer-min.png) 100% 100% / cover;
 }
 
 
