@@ -79,10 +79,40 @@ header{
 
 
 .screen-2{
-	height: 730px;
+	height: 625px;
 	min-width: 600px;
 	max-width: 1000px;
 	margin:0 auto;
+	padding-top: 30px;
 	background: #5e8c8b;
 	color:#feead4;
+
+}
+.h1-screen-2{
+	margin: 0;
+	margin-bottom: 35px;
+	text-align: center;
+	font-size: 60px;
+	font-weight: bold;
+}
+.rules{
+	margin-left: 60px;
+	display: grid;
+	grid-template-columns: 100px 1fr;
+	grid-template-rows: 70px 1fr 1fr;
+	grid-row-gap: 75px;
+}
+.rule{
+	width: 40px;
+	height: 40px;
+	background:#feead4;
+	color:#5e8c8b;
+	border:5px solid #1a2233;
+	text-align: center;
+	font-size: 33px;
+	margin-right: 60px;
+}
+.rule-text{
+	font-size: 33px;
+	line-height: 40px;
 }
