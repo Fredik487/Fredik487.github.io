@@ -79,7 +79,7 @@ header{
 
 
 .screen-2{
-	height: 625px;
+	height: 645px;
 	min-width: 600px;
 	max-width: 1000px;
 	margin:0 auto;
@@ -110,7 +110,6 @@ header{
 	border:5px solid #1a2233;
 	text-align: center;
 	font-size: 33px;
-	margin-right: 60px;
 }
 .rule-text{
 	font-size: 33px;
