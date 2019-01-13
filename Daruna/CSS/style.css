@@ -1,1 +1,88 @@
-body{background:red;}
+body{background:#feead4;
+	font-family:Candara;
+	font-weight: bold;
+	height: 2000px;
+}
+header{
+	min-width: 600px;
+	max-width: 1000px;
+	height: 135px;
+	background: #feead4;
+	border-bottom:3px solid #cb998b;
+	margin: 0 auto;
+	color: #1a2233;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 7%;
+	align-items: center;
+
+}
+.logo{
+	width: 500px;
+	height: 100px;
+	margin-left: 40px;
+	display: grid;
+	grid-template-columns: 100px 2fr;
+	align-items: center;
+}
+.img-logo{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: url(../img/logo.jpg) 100% 100% no-repeat / cover;
+}
+.text-logo{
+	font-size: 60px;
+	margin-left: 20px;
+
+}
+.wallet{
+	width: 350px;
+	font-size: 24px;
+}
+
+.screen-1{
+	min-width: 600px;
+	max-width: 1000px;
+	height: 545px;
+	margin: 0 auto;
+	background: url(../img/bg-screen-1.jpg) 100% 100% no-repeat / cover;
+	color: #d7d7db;
+	padding-top: 72px;
+}
+.head-1{
+	width:420px;
+	margin: 0;
+	margin-left: 40px;
+	font-size: 70px;
+	line-height:70px; 
+}
+.button{
+	width: 240px;
+	height: 80px;
+	background: #e56241;
+	border:0;
+	border-radius: 10px;
+	font-size: 40px;
+	font-weight: bold;
+	margin:60px 0 0 8%;
+	transition: 0.2s
+}
+.button a{
+	text-decoration: none;
+	color: #feead4;
+}
+.button:hover{
+	transition: 0.4s;
+	transform:scale(0.95);
+}
+
+
+.screen-2{
+	height: 730px;
+	min-width: 600px;
+	max-width: 1000px;
+	margin:0 auto;
+	background: #5e8c8b;
+	color:#feead4;
+}
