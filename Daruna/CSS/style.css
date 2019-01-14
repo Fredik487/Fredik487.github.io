@@ -1,7 +1,6 @@
 body{background:#feead4;
 	font-family:Candara;
 	font-weight: bold;
-	height: 2000px;
 }
 header{
 	min-width: 600px;
@@ -15,7 +14,6 @@ header{
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 7%;
 	align-items: center;
-
 }
 .logo{
 	width: 500px;
@@ -40,6 +38,7 @@ header{
 	width: 350px;
 	font-size: 24px;
 }
+
 
 .screen-1{
 	min-width: 600px;
@@ -88,7 +87,7 @@ header{
 	color:#feead4;
 
 }
-.h1-screen-2{
+.h1-screen-2,.h1{
 	margin: 0;
 	margin-bottom: 35px;
 	text-align: center;
@@ -114,4 +113,108 @@ header{
 .rule-text{
 	font-size: 33px;
 	line-height: 40px;
+}
+
+
+.screen-3{
+	height: 465px;
+	min-width: 600px;
+	max-width: 1000px;
+	margin:0 auto;
+	padding-top: 30px;
+}
+.h1-screen-3{
+	color: #1a2233;
+	margin: 0;
+}
+.orders{
+	width: 100%;
+	height: 346px;
+	display: grid;
+	grid-template-columns: repeat(3,258px);
+	grid-column-gap: 47px;
+	align-items:center;
+	justify-content:center;
+}
+.order{
+	height: 231px;
+	width: 258px;
+	background: #eeac9d;
+	position: relative;
+	display: grid;
+	grid-template-columns: 192px;
+	grid-template-rows: 133px 80px;
+	justify-content:center;
+	align-items:end;	
+}
+.order:nth-child(2){
+	height: 290px;
+	grid-template-columns: 192px;
+	grid-template-rows: 180px 80px;
+	margin-top: 56px;
+}
+.order:before{
+	content: "1";
+	position: absolute;
+	bottom: 85%;
+	left: -10%;
+	width: 40px;
+	height: 40px;
+	background: #5e8c8b;
+	border: 5px solid #1a2233;
+	font-size: 49px;
+	text-align: center;
+	color:#feead4;
+	line-height: 30px;
+}
+.order:nth-child(2):before{
+	content: "2";
+	position: absolute;
+	bottom: 88%;
+}
+.order:nth-child(3):before{
+	content: "3";
+	font-size: 47px;
+	line-height: 25px;
+}
+.order-text{
+	font-size: 49px;
+	text-align: center;
+	color:#1a2233;
+	line-height: 50px;
+}
+.order-text span{
+	font-size: 30px;
+}
+.order .button{
+	width: 193px;
+	height: 63px;
+	text-align: center;
+	line-height: 55px;
+	margin: 0;
+}
+
+
+footer{
+	height: 140px;
+	max-width: 1000px;
+	min-width: 600px;
+	background: #5e8c8a;
+	margin: 0 auto;
+}
+.text{
+	display: inline-block;
+	width: 45%;
+	font-size: 25px;
+	color:#feead4;
+}
+.text a{
+	color:#feead4;
+}
+.model-is{
+	margin-left: 30px;
+	margin-top: 60px;
+}
+.design-by{
+	text-align: right;
 }
