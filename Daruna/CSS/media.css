@@ -1,7 +1,49 @@
 @media screen and (min-width: 320px) and (max-width: 481px){
+	header{
+		height: 200px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 100px;
+		grid-gap: 0%;
+		text-align: center;
+	}
+	.wallet{
+		text-align: center;
+		width: 100%;
+	}
+	
+	.screen-1{
+		background: url(../img/bg-screen-1.jpg) 50% 100% no-repeat / cover;
+	}
+	.head-1{
+		margin:0 auto;
+	}
+	.button{
+		margin:85px 25% 0;
+	}
+
+	.screen-2{
+		height: 1000px;
+	}
+	.rules {
+		margin-left: 30px;
+    	grid-template-columns: 75px 1fr;
+    	grid-template-rows: 115px 1fr 1fr;
+    }
+
+    .screen-3 {
+    	height: 1110px;;
+	}
+	.h1-screen-3 {
+    	margin-bottom: 50px;
+	}
+	.orders {
+	    height: 920px;
+	    grid-template-columns: 258px;
+	    grid-template-rows: 235px 355px 340px;
+	    grid-column-gap: 0px;
+	}
+
 }
-
-
 @media screen and (min-width: 481px) and (max-width: 768px){
 }
 
