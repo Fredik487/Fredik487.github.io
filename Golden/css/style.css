@@ -1,0 +1,698 @@
+@font-face {
+    font-family: Wisdom;
+    src: url("../fonts/Wisdom_Script.otf");
+}
+@font-face {
+    font-family: Droid Serif;
+    src: url("../fonts/DroidSerif/DroidSerif.ttf");
+}
+@font-face {
+    font-family: Monstserrat;
+    src: url("../fonts/Monstserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: RobotoSlab;
+    src: url("../fonts/RobotoSlab/RobotoSlab-Regular.ttf");
+}
+html{scroll-behavior: smooth;}
+*{box-sizing: border-box;}
+
+.header{
+	height: 700px;
+	background: url(../images/Bg-Header-min.png) no-repeat 0% 0%;
+	padding-top: 35px;
+}
+.container-menu{
+	width: 945px;
+	height: 40px;
+	margin: 0 auto 205px;
+}
+.logo{
+	display: inline-block;
+	width: 80px;
+	font-family: "Wisdom";
+	font-size: 26px;
+	color: #f1c73b;
+	letter-spacing: 1px;
+}
+.logo a{color: #f1c73b;}
+.menu{
+	display: inline-block;
+	width: 500px;
+	height: 20px;
+	padding: 0;
+	margin-left: 360px;
+}
+.menu__items{
+	list-style: none;
+	display: inline-block;
+	margin-right: 35px;
+    letter-spacing: 0.5px;
+}
+.menu__items:hover a{
+	border-bottom: 2px solid #fed136;
+}
+#active{
+	border-bottom: 2px solid #fed136;
+}
+.menu__items:last-child{
+	margin-right: 0;
+}
+.menu__items a{
+	font-family: "Monstserrat";
+	font-size: 14px;
+	color:white;
+	text-decoration: none;
+	text-transform:uppercase;
+}
+.container-title{
+	height: 275px;
+	width: 940px;
+	margin: 0 auto;
+	text-align: center;
+	color:white;
+}
+.header__h2{
+	font-family: "Droid Serif";
+	font-size: 40px;
+	font-style: italic;
+	letter-spacing: -2px;
+}
+.header_h1{
+	height: 70px;
+	font-family: "Monstserrat";
+	font-size: 75px;
+	text-transform: uppercase;
+	margin: 30px 0 55px;
+	letter-spacing: -2px;
+	line-height: 80px;	
+}
+.header__button{
+	height: 65px;
+	width: 240px;
+	margin: 0 auto;
+	background: #fed136;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.header__button a{
+	font-family: "Monstserrat";
+	font-size: 18px;
+	text-transform: uppercase;
+	line-height: 65px;
+}
+.header__button:hover a{
+	transition: .3s;
+	border-bottom: 3px solid white;
+}
+
+
+
+
+.service{
+	background: white;
+	height: 500px;
+	min-height: 500px;
+	padding: 60px 0;
+}
+.container-service{
+	width: 950px;
+	height: 360px;
+	text-align: center;
+	margin: 0 auto;
+}
+.service__h2{
+	color: #222222;
+	font-family: "Monstserrat";
+	font-size: 40px;
+	text-transform: uppercase;
+	margin: 0 0 10px;
+}
+.service__h4{
+	margin: 0;
+	font-family: "Droid Serif";
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 100;
+	color: #777777;
+	margin-bottom: 80px;
+	
+}
+.container-asides{
+	width: 100%;
+	height: 200px;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows:1fr;
+	grid-column-gap: 50px;
+}
+.service__aside-1,
+.service__aside-2,
+.service__aside-3{
+	width: 100%;
+	height: 200px;
+}
+.aside__icon-1,
+.aside__icon-2,
+.aside__icon-3{
+	height: 75px;
+	width: 75px;
+	margin: 0 auto
+}
+.aside__icon-1{
+	background: url(../images/Services_img/icon-basket-min.png) no-repeat 50% 50%;
+	border: 4px solid #fed136;
+	border-radius: 50%;
+}
+.aside__icon-2{
+	background: url(../images/Services_img/icon-laptop-min.png) no-repeat 50% 50%;
+	border: 4px solid #fed136;
+	border-radius: 50%;
+}
+.aside__icon-3{
+	background: url(../images/Services_img/icon-locked-min.png) no-repeat 50% 50%;
+	border: 4px solid #fed136;
+	border-radius: 50%;
+}
+.aside__h4{
+	margin: 20px 0 15px;
+	font-family: "Monstserrat";
+	font-size: 18px;
+	color: #222222;
+}
+.aside__p{
+	font-family: "RobotoSlab";
+	font-size: 14px;
+	color:#777777;
+	letter-spacing: -1px;
+	line-height: 25px;
+}
+
+
+
+
+.portfolio{
+	height: 1100px;
+	background: #f7f7f7;
+	padding: 60px 0;
+}
+.container-portfolio{
+	width: 940px;
+	height: 980px;
+	margin: 0 auto;
+	text-align: center;
+}
+.portfolio__h2{
+	font-family: "Monstserrat";
+	font-size: 40px;
+	color: #222222;
+	margin: 0 0 20px;
+	text-transform: uppercase;
+
+}
+.portfolio__h4{
+	color: #777;
+	font-family: "Droid Serif";
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 100;
+	margin: 0 0 75px;
+}
+.container__works{
+	height: 840px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3,290px);
+	grid-template-rows:repeat(2,390px);
+	grid-gap: 35px;
+}
+.works{
+	height: 390px;
+	width: 290px;
+	background: #fff;
+	transition: 1s;
+}
+.works:hover{
+	cursor: pointer;
+	transition: 0.6s;
+	box-shadow: 1px 1px 50px #b6b6b6
+}
+.work__fotos{
+	height: 300px;
+}
+.work-1__foto{
+	background: url(../images/Portfolio_img/Portfolio-item-1-min.png) no-repeat 50% 100%;
+}
+.work-2__foto{
+	background: url(../images/Portfolio_img/Portfolio-item-2-min.png) no-repeat 50% 0%;
+}
+.work-3__foto{
+	background: url(../images/Portfolio_img/Portfolio-item-3-min.png) no-repeat 50% 100%;
+}
+.work-4__foto{
+	background: url(../images/Portfolio_img/Portfolio-item-4-min.png) no-repeat 50% 100%;
+}
+.work-5__foto{
+	background: url(../images/Portfolio_img/Portfolio-item-5-min.png) no-repeat 50% 100%;
+}
+.work-6__foto{
+	background: url(../images/Portfolio_img/Portfolio-item-6-min.png) no-repeat 50% 100%;
+}
+.work__name{
+	font-family: "Monstserrat";
+	font-size: 18px;
+	font-weight:bold;
+	color: #333;
+	margin: 30px 0 5px;
+}
+.work__type{
+	font-family: "Droid Serif";
+	font-size: 14px;
+	font-style: italic;
+	font-weight: 200;
+	color: #737373;
+}
+
+
+
+.about-us{
+	height: 1580px;
+	background: white;
+	padding: 60px 0px;
+}
+.container-about-us{
+	height: 1460px;
+	width: 885px;
+	margin: 0 auto;
+	text-align: center;
+}
+.about__h2{
+	color:#222222;
+	font-family: "Monstserrat";
+	font-size: 40px;
+	text-transform: uppercase;
+	margin: 0 0 20px 0;
+}
+.about__h4{
+	color: #777;
+	font-family: "Droid Serif";
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 100;
+	margin: 0 0 80px 0;
+}
+.container-history{
+	height: 1310px;
+}
+.events{
+	width: 60%;
+	height: 190px;
+	display: grid;
+	grid-template-columns: 360px 170px;
+	grid-template-rows: 190px;
+	margin-bottom: 90px;
+	text-align: right;
+}
+.events:nth-child(even){
+	grid-template-columns: 170px 360px;
+	margin-left: 41%;
+}
+.events::after{
+	content:"";
+	width: 2px;
+	height: 110px;
+	background: #f1f1f1;
+	grid-column: 2/3;
+	margin-left: 50%;
+}
+.events:nth-child(even)::after{
+	grid-column: 1/2;
+	margin-left: 50%;
+}
+.events:last-child::after{
+	content:"";
+	width: 0px;
+	height: 0px;
+}
+.events_title{
+	width: 360px;
+	padding-right: 40px;
+}
+.events_title:nth-child(even){
+	text-align: left;
+	padding-left: 40px;
+}
+.events__date,.events__h3{
+	font-family: "Monstserrat";
+	font-size: 16px;
+	color:#222222;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.events__date{
+	margin-bottom:10px;
+}
+.events__h3{
+	margin-top: 0;
+	margin-bottom: 20px
+}
+.events__text{
+	font-family: "RobotoSlab";
+	font-size: 14px;
+	color:#777777;
+	letter-spacing: -1px;
+	line-height: 25px;
+	margin: 0;
+	margin-right: 40px;
+}
+.events__text:nth-child(n){
+	margin: 0;
+}
+.event__fotos{
+	height: 170px;
+	width: 170px;
+	border:7px solid #f1f1f1;
+	border-radius: 50%;
+	margin: auto 0 0;
+}
+.event-1__foto{
+	background: url(../images/Ubout-Us_img/About-Us_item-1-min.png) 20% 100% / cover;
+}
+.event-2__foto{
+	background: url(../images/Ubout-Us_img/About-Us_item-2-min.png) 30% 100% / cover;
+}
+.event-3__foto{
+	background: url(../images/Ubout-Us_img/About-Us_item-3-min.png) 35% 100% / cover;
+}
+.event-4__foto{
+	background: url(../images/Ubout-Us_img/About-Us_item-4-min.png) 35% 100% / cover;
+}
+.container-story-continues{
+    margin-bottom: 0;
+}
+.story-continues{
+	height: 170px;
+	width: 170px;
+	background: #fed136;
+	border:7px solid #f1f1f1;
+	border-radius: 50%;
+	position: relative;
+	grid-column: 2/3	
+}
+.story-continues__text{
+	width: 110px;
+	height: 95px;
+	font-family: "Monstserrat";
+	font-size: 18px;
+	color:#fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 25px;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+}
+
+
+
+
+.our-team{
+	height: 730px;
+	background: #f7f7f7;
+	padding: 60px 0;
+}
+.container-team{
+	height: 585px;
+	width: 785px;
+	margin: 0 auto;
+	text-align: center;
+}
+.our-team__h2{
+	color:#222222;
+	font-family: "Monstserrat";
+	font-size: 40px;
+	text-transform: uppercase;
+	margin: 0 0 20px 0;
+}
+.our-team__h4{
+	color: #777;
+	font-family: "Droid Serif";
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 100;
+	margin: 0 0 80px 0;
+}
+.container-people{
+	height: 430px;
+	width: 785px;
+	display: grid;
+	grid-template-columns: 220px 220px 220px;
+	grid-template-rows: 340px 40px;
+	grid-column-gap: 60px;
+	grid-row-gap: 45px;
+}
+.team__human{
+	width: 220px;
+	height: 340px;
+}
+.team-human__foto{
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+	background: white;
+}
+.team-human__foto-1{
+	background: url(../images/Our-team_img/human-1-min.jpg) no-repeat 50% 100% / cover;
+}
+.team-human__foto-2{
+	background: url(../images/Our-team_img/human-2-min.jpg) no-repeat 50% 100% / cover;
+}
+.team-human__foto-3{
+	background: url(../images/Our-team_img/human-3-min.jpg) no-repeat 50% 100% / cover;
+}
+
+.name{
+	color:#222222;
+	font-family: "Monstserrat";
+	font-size: 18px;
+	margin: 25px 0 10px 0;
+
+}
+.profesion{
+	font-family: "RobotoSlab";
+	font-size: 14px;
+	color:#777777;
+	letter-spacing: -1px;
+	margin: 0 0 10px 0;
+	letter-spacing: 0;
+}
+.container-social-icon{
+	height: 40px;
+	width: 140px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.social-icon{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	border: 3px solid #222;
+	transition: 0.5s;
+}
+.twitter-icon{
+	width: 40px;
+	height: 40px;
+	background: url(../images/social-icons/icon-twitter.svg) 40% 40% / 110%;
+}
+.facebook-icon{
+	width: 40px;
+	height: 40px;
+	background: url(../images/social-icons/icon-facebook.svg) 40% 40% / 110%;
+}
+.pinterest-icon{
+	width: 40px;
+	height: 40px;
+	background: url(../images/social-icons/icon-pinterest.svg) 40% 40% / 110%;
+}
+.google-plus-icon{
+	width: 40px;
+	height: 40px;
+	background: url(../images/social-icons/icon-google+.svg) 40% 40% / 110%;
+}
+.social-icon:hover{
+	background-size: 100%;
+	border:3px solid #fed136;
+	transition: 0.2s;
+	cursor: pointer;
+}
+.our-team__text{
+	width: 605px;
+	margin: 0 auto;
+	font-family: "RobotoSlab";
+	font-size: 16px;
+	color:#777777;
+	letter-spacing: -1px;
+	line-height: 25px;
+	grid-column:1/4;
+}
+
+
+
+
+.logos{
+	height: 165px;
+	padding: 60px 0;
+}
+.container-logos{
+	width: 845px;
+	height: 42px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 40px;
+}
+.logo{cursor: pointer;}
+.logo a{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+.logo-1{
+	height: 42px;
+	width: 230px;
+	background: url(../images/Logos/Logos_envato-min.png) no-repeat 100% 100% / 100%;	
+}
+.logo-2{
+	height: 42px;
+	width: 190px;
+	background: url(../images/Logos/Logos_word_press-min.png) 100% 100% / cover;
+}
+.logo-3{
+	height: 42px;
+	width: 135px;
+	background: url(../images/Logos/Logos_tuts+-min.png) 100% 100% / cover;
+}
+.logo-4{
+	height: 42px;
+	width: 170px;
+	background: url(../images/Logos/Logos_microlancer-min.png) 100% 100% / cover;
+}
+
+
+
+.contacts{
+	height: 590px;
+	background:rgb(34,34,34);
+	padding: 45px 0;
+}
+
+.container-contacts{
+	width: 940px;
+	height: 465px;
+	margin: 0 auto;
+	text-align: center;
+}
+.contacts__h2{
+	color:#fff;
+	font-family: "Monstserrat";
+	font-size: 40px;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+.contacts__h4{
+	color: #777;
+	font-family: "Droid Serif";
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 100;
+	margin-bottom: 75px;
+}
+form{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 50px 50px 50px 65px;
+	grid-column-gap: 30px;
+	grid-row-gap:25px;
+}
+form input{
+	height: 50px;
+	width: 460px;
+	border: none;
+	border-radius: 5px;
+	padding:0 0 0 20px ;
+	font-family: "Monstserrat";
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	word-wrap: break-word;
+}
+.subject-inpt{
+	grid-row:3/4;
+	grid-column:1/2;
+}
+.message-inpt{
+	height: 200px;
+	grid-row:1/2;
+	grid-column:2/3;
+	resize: none;
+	border-radius: 5px;
+	padding:15px 0 0 20px ;
+	font-family: "Monstserrat";
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+   
+}
+.contacts__send{
+	width: 240px;
+	background: #fed136;
+	border:none;
+	border-radius: 5px;
+	grid-row:4/5;
+	grid-column:1/3;
+	margin: 0 auto;
+	cursor: pointer;	
+}
+.contacts__send a{
+	color: #fff;
+	font-family: "Monstserrat";
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition:0.4s ;
+}
+.contacts__send:hover a{
+	transition: .3s;
+	border-bottom: 3px solid white;
+}
+
+
+.footer{
+	height: 90px;
+	background: #fff;
+	padding: 20px 0 30px;
+}
+.container-footer{
+	width: 940px;
+	height: 40px;
+	display: grid;
+	grid-template-columns: 270px 110px 1fr;
+	margin:0 auto;
+}
+.footer span{
+	width: 270px;
+	font-family: "Monstserrat";
+	font-size: 14px;
+	font-weight:300;
+	color: #555;
+	line-height: 40px;
+}
+.footer .container-social-icon{
+	grid-column:3/4;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 10px;
+	margin: 0;
+}
