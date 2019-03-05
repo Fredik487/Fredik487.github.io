@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) and (max-width: 481px){
+@media screen and (min-width: 320px) and (max-width: 768px){
 	header{
 		height: 170px;
 		grid-template-columns: 1fr;
@@ -124,6 +124,52 @@
 
 }
 @media screen and (min-width: 481px) and (max-width: 768px){
+	header {
+	    height: 130px;
+	    grid-template-columns: 2fr 1fr;
+	    grid-template-rows: 1fr;
+	}
+	.logo {
+	    grid-template-columns: 1fr 1.5fr;
+	    grid-column-gap: 1%;
+	}
+	.text-logo {
+    	font-size: 2.25em;
+    	min-width: 220px;
+	}
+
+	
+	.head-1 {
+	    font-size: 4.375em;
+	    line-height: 60px;
+	}
+	.button {	
+	    font-size: 2.5em;
+	}
+
+
+	.h1-screen-2, .h1 {
+    	font-size: 2.05em;
+	}
+	.rule {
+    	font-size: 1.6625em;
+    }
+	.rule-text {
+    	font-size: 1.4625em;
+	}
+
+
+	.order:before {
+	    font-size: 1.7625em;
+	}
+	.order .button {
+	    font-size: 2em;
+	}
+
+
+	.text {
+    	font-size: 1.5em;
+	}
 }
 
 
