@@ -41,6 +41,7 @@
 		width: 200px;
     	height: 70px;
     	font-size: 2em;
+    	line-height: 65px;
 	}
 
 	.screen-2{
@@ -108,14 +109,14 @@
 	}
 
 	footer {
-  	  height: 130px;
+  	  height: 70px;
 	}
 	.text{
-		font-size: 1.5625em;
+		font-size: 1em;
 	}
 	.model-is {
    		margin-left: 0px;
-    	margin-top: 40px;
+    	margin-top: 25px;
     	text-align: center;
 	}
 

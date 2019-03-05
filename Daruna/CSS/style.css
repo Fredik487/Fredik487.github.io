@@ -185,7 +185,7 @@ header{
 .order-text span{
 	font-size: 30px;
 }
-.order .button{
+.order >.button{
 	display: block;
 	width: 193px;
 	height: 63px;
