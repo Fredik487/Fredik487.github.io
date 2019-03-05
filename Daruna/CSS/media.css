@@ -110,6 +110,9 @@
 	footer {
   	  height: 130px;
 	}
+	.text{
+		font-size: 1.5625em;
+	}
 	.model-is {
    		margin-left: 0px;
     	margin-top: 40px;
