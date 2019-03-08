@@ -88,6 +88,7 @@
 		width: 30px;
     	height: 30px;
     	bottom: 90%;
+    	border: 4px solid #1a2233;
     	font-size: 1.6625em;
     	line-height: 28px;
 	}
@@ -161,6 +162,9 @@
 
 	.order:before {
 	    font-size: 1.7625em;
+	}
+	.order:nth-child(2):before {
+    	bottom: 88%;
 	}
 	.order .button {
 	    font-size: 2em;
