@@ -186,6 +186,48 @@
     	font-size: 1.2em;
     	width: 100%;
 	}
+
+	.screen-3 {
+    	height: 1000px;;
+	}
+	.h1-screen-3 {
+    	margin-bottom: 35px;
+	}
+	.orders {
+	    height: 930px;
+	    grid-template-columns: 300px;
+	    grid-template-rows: 230px 350px 315px;
+	    grid-column-gap: 0px;
+	}
+	.order{
+		width: 100%;
+    }
+	.order:before{
+		width: 40px;
+    	height: 40px;
+    	bottom: 90%;
+    	border: 4px solid #1a2233;
+    	font-size: 2.3625em;
+    	line-height: 35px;
+	}
+	.order:nth-child(3):before{
+		font-size: 1.9375em;
+		line-height: 30px;
+	}
+	.order-text {
+	    font-size: 3.1625em;
+	    line-height: 50px;
+	}
+	.order-text span {
+    	font-size: 30px;
+	}
+	.order .button {
+	    width: 210px;
+	    height: 65px;
+	    line-height: 56px;
+	    margin: 0 auto;
+	    font-size: 2.4em;
+	}
 }
 
 
