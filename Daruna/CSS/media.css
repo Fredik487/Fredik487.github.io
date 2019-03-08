@@ -45,9 +45,7 @@
     	line-height: 65px;
 	}
 
-	.screen-2{
-		height: calc(100% + 40px);
-	}
+	
 	.h1-screen-2, .h1 {
     	margin-bottom: 25px;
     	font-size: 1.75em;
@@ -178,6 +176,16 @@
 
 
 @media screen and (min-width: 768px) and (max-width: 992px){
+	.header{
+		grid-template-columns: 1fr 1fr;
+	}
+	.text-logo {
+    	font-size: 3em;
+	}
+	.wallet {
+    	font-size: 1.2em;
+    	width: 100%;
+	}
 }
 
 
