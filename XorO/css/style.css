@@ -1,0 +1,21 @@
+body{box-sizing: border-box;}
+.wrapper{
+	width: 300px;
+	height: 300px;
+	border: 2px solid black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.btn{
+	border: 2px solid black;
+	font-size: 80px;
+}
+.btn:hover{
+	border: 2px solid green;
+}
