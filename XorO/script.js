@@ -8,6 +8,7 @@ var btn6 = document.getElementById('btn6');
 var btn7 = document.getElementById('btn7');
 var btn8 = document.getElementById('btn8');
 var btn9 = document.getElementById('btn9');
+var writePlayer = document.getElementById('player') 
 
 pos={
 	"btn1":0,
@@ -29,6 +30,7 @@ function reservPos(pos){
 	if(checkPos(freepos[pos])){
 		if(player == 1){freepos[pos] = 1;player=2;}
 		else{freepos[pos] = 2;player=1;}
+		writePlayer.innerHTML ="Now do is "+player;
 	}else{alert("RESERVED!")}
 	//alert(freepos)
 }
