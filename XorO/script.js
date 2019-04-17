@@ -44,7 +44,7 @@ function reservPos(pos){
 btn1.onclick = function(e){
 	reservPos(pos[this.id]);
 	if(freepos[pos[this.id]] == 1){btn1.innerHTML = "X";}
-	else{btn2.innerHTML = "O";}
+	else{btn1.innerHTML = "O";}
 }
 btn2.onclick = function(e){
 	reservPos(pos[this.id]);

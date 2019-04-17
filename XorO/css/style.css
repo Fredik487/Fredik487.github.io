@@ -4,7 +4,7 @@ body{box-sizing: border-box;}
 	height: 300px;
 	border: 2px solid black;
 	position: absolute;
-	top: 50%;
+	top: 52%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	display: grid;
@@ -12,13 +12,13 @@ body{box-sizing: border-box;}
 	grid-template-rows: 1fr 1fr 1fr;
 }
 #player{
-	width: 100px;
+	width: 120px;
 	height: 20px;
 	background: black;
 	color: white;
 	text-align: center;
 	font-size: 18px;
-	margin: 50px auto 0;
+	margin: 50px auto 0px;
 	padding: 10px 20px;
 	border-radius: 10px;
 }
