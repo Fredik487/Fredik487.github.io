@@ -21,27 +21,30 @@ pos={
 	"btn8":7,
 	"btn9":8,
 }
+
 var player = 1;
 function checkPos(pos){
 	if(pos == 1 ||pos == 2) return 0;
 	else return 1;
 }
+var allposition = 9;
+function checkFreePos(pos){
+	if(freepos[pos] == 1 ||freepos[pos] == 2){console.log(allposition-=1);}
+	if(allposition == 0){writePlayer.innerHTML = "End game";}
+	else return;
+}
 function reservPos(pos){
 	if(checkPos(freepos[pos])){
-		if(player == 1){freepos[pos] = 1;player=2;}
-		else{freepos[pos] = 2;player=1;}
-		writePlayer.innerHTML ="Now do is "+player;
+		if(player == 1){freepos[pos] = 1;player=2;writePlayer.innerHTML ="Now do is O";}
+		else{freepos[pos] = 2;player=1;writePlayer.innerHTML ="Now do is X";}
 	}else{alert("RESERVED!")}
-	//alert(freepos)
+	checkFreePos(pos);
 }
-for (var i = 1; i <= 9; i++) {
-	var btn = document.getElementById('btn' +i);
-	if(freepos[i-1] == 1){btn.style.backgroundColor = "red";}
-}
+
 btn1.onclick = function(e){
 	reservPos(pos[this.id]);
 	if(freepos[pos[this.id]] == 1){btn1.innerHTML = "X";}
-	else{btn1.innerHTML = "O";}
+	else{btn2.innerHTML = "O";}
 }
 btn2.onclick = function(e){
 	reservPos(pos[this.id]);
