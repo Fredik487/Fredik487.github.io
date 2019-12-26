@@ -293,6 +293,9 @@ form input{
     display: grid;
     grid-template-columns: repeat(2,290px);}
 }
+@media screen and (min-width: 481px) and (max-width: 640px){
+
+}
 
 @media screen and (min-width: 768px) and (max-width: 992px){
 
@@ -307,5 +310,6 @@ form input{
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1600px){
+	.header{background: url(../images/Bg-Header-min.png) no-repeat 50% 0%;}
 
 }
