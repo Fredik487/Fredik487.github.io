@@ -2,7 +2,9 @@ body{box-sizing: border-box;}
 #wrapper{
 	width: 300px;
 	height: 300px;
-	border: 2px solid black;
+	border: 2px solid #333;
+	background: #006100;
+	background:#F4F3F3;
 	position: absolute;
 	top: 52%;
 	left: 50%;
@@ -18,14 +20,36 @@ body{box-sizing: border-box;}
 	color: white;
 	text-align: center;
 	font-size: 18px;
-	margin: 50px auto 0px;
+	margin: 10% auto 0px;
 	padding: 10px 20px;
 	border-radius: 10px;
+	transition: transform 0.5s;
 }
-.btn{
+#player:hover{
+	transform: translateY(-10px);
+	transition: transform 0.3s;
+}
+.btn,.btnRed{
 	border: 2px solid black;
 	font-size: 80px;
+	color: black;
+	transition: transform 0.5s;
 }
 .btn:hover{
-	border: 2px solid green;
+	background: green;
+	transform: translateY(-20px);
+	transition: transform 0.3s;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+}
+.btnRed:hover{
+	background: #d10000;
+	transform: translateY(-20px);
+	transition: transform 0.3s;
+	color:#97f097;
+	color: #fcc7c7;
+	border-left: none;
+	border-right: none;
+	border-top: none;
 }

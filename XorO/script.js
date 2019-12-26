@@ -33,6 +33,9 @@ wrapper.addEventListener('click',function(e)
 		var el = event.target;
 		var pos =  el.id.substr(3,1) - 1;
 		reservPos(pos);
+		el.classList.remove('btn');
+		el.classList.add('btnRed');
+		wrapper.style.background = "#850000";
 		if(freepos[pos] == 1){el.innerHTML = "X";}
 		else{el.innerHTML = "O";}
 		if(checkWin(freepos) == 1){
@@ -42,6 +45,14 @@ wrapper.addEventListener('click',function(e)
 			alert("Win O");
 			refresh();
 		}
+	}
+);
+
+wrapper.addEventListener('mouseover',function(e)
+	{
+		var el = event.target;
+		if(el.className == "btnRed"){wrapper.style.background = "#850000";}
+		else{wrapper.style.background="#006100";}
 	}
 );
 
