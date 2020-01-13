@@ -60,7 +60,7 @@ body{box-sizing: border-box;}
 	display: none;
 	opacity: 0;
 	width: 500px;
-	height: 40px;
+	height: 70px;
 	border-radius: 20px;
 	background: green;
 	position: absolute;
@@ -68,7 +68,7 @@ body{box-sizing: border-box;}
 	left: 50%;
 	transform: translate(-50%,-50%);
 	transition: all 0.3s;
-	padding: 140px 0;
+	padding: 125px 0;
 	text-align: center;
 	font-size: 30px;
 	cursor: pointer;
