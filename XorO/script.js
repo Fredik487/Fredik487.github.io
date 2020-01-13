@@ -1,5 +1,6 @@
 var freepos = [0,0,0,0,0,0,0,0,0];
 var writePlayer = document.getElementById('player');
+var pop_up = document.getElementById('pop_up');
 var wrapper = document.getElementById('wrapper');
 
 var player = 1;
@@ -12,7 +13,8 @@ function checkPos(pos){
 var allposition = 9;
 function checkFreePos(pos){
 	if(freepos[pos] == 1 ||freepos[pos] == 2){allposition-=1;}
-	if(allposition == 0){writePlayer.innerHTML = "End game";refresh();}
+	if(allposition == 0){writePlayer.innerHTML = "End game";//refresh();
+}
 	else return;
 }
 
@@ -20,13 +22,33 @@ function reservPos(pos){
 	if(checkPos(freepos[pos])){
 		if(player == 1){freepos[pos] = 1;player=2;writePlayer.innerHTML ="Now do is O";}
 		else{freepos[pos] = 2;player=1;writePlayer.innerHTML ="Now do is X";}
-	}else{alert("RESERVED!")}
+	}else{WinAlert("R")}
 	checkFreePos(pos);
 };
 
 function refresh(){
 	location.reload();
 };
+
+function WinAlert(pl){
+	pop_up.style.display="block";
+	pop_up.style.opacity = "1";
+	if(pl=="X" || pl=="0"){
+		pop_up.innerHTML="Winner is "+pl+"<br><span>Click for restarting</span>";
+		pop_up.onclick = function(){refresh();};
+		wrapper.style.opacity = "0";
+		writePlayer.style.opacity = "0";
+	}else if(pl=="R"){
+		pop_up.style.background="yellow";
+		pop_up.innerHTML="This place is reserved<br><span>Click for close</span>";
+		pop_up.onclick = function(){
+			pop_up.style.opacity = "0";
+			pop_up.style.display="none";
+			pop_up.style.background="green";
+		}
+	}
+}
+
 
 wrapper.addEventListener('click',function(e)
 	{
@@ -39,11 +61,9 @@ wrapper.addEventListener('click',function(e)
 		if(freepos[pos] == 1){el.innerHTML = "X";}
 		else{el.innerHTML = "O";}
 		if(checkWin(freepos) == 1){
-			alert("Win X");
-			refresh();
+			WinAlert("X");
 		}else if(checkWin(freepos) == 2){
-			alert("Win O");
-			refresh();
+			WinAlert("O");
 		}
 	}
 );
