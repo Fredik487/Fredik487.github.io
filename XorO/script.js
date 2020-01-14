@@ -12,17 +12,17 @@ function checkPos(pos){
 var allposition = 9;
 function checkFreePos(pos){
 	if(freepos[pos] == 1 ||freepos[pos] == 2){allposition-=1;}
-	if(allposition == 0){writePlayer.innerHTML = "End game";refresh();
-}
-	else return;
+	if(allposition == 0){
+		writePlayer.innerHTML = "End game";refresh();
+	}else return;
 }
 
 function reservPos(pos){
 	if(checkPos(freepos[pos])){
 		if(player == 1){freepos[pos] = 1;player=2;writePlayer.innerHTML ="Now do is O";}
 		else{freepos[pos] = 2;player=1;writePlayer.innerHTML ="Now do is X";}
+		checkFreePos(pos);
 	}else{WinAlert("R")}
-	checkFreePos(pos);
 };
 
 function refresh(){
