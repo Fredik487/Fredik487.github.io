@@ -13,7 +13,7 @@ function checkPos(pos){
 var allposition = 9;
 function checkFreePos(pos){
 	if(freepos[pos] == 1 ||freepos[pos] == 2){allposition-=1;}
-	if(allposition == 0){writePlayer.innerHTML = "End game";//refresh();
+	if(allposition == 0){writePlayer.innerHTML = "End game";refresh();
 }
 	else return;
 }
@@ -101,6 +101,6 @@ function checkWin(fp){
 	if(fp[2]==2 && fp[4]==2 && fp[6]==2){return 2;}
 };
 
-//добавить норм push up
+//complite:добавить норм push up
 //добавить выбор игры с компом или с игроком
 //написать фнц компа
