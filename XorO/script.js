@@ -77,29 +77,16 @@ wrapper.addEventListener('mouseover',function(e)
 );
 
 function checkWin(fp){
-	if(fp[0]==1 && fp[1]==1 && fp[2]==1){return 1;}
-	if(fp[3]==1 && fp[4]==1 && fp[5]==1){return 1;}
-	if(fp[6]==1 && fp[7]==1 && fp[8]==1){return 1;}
+	var i;
+	for(i=0;i<=6;i+=3){ if(fp[i]==1 && fp[1+i]==1 && fp[2+i]==1){return 1;} }
+	for(i=0;i<=2;i+=1){ if(fp[i]==1 && fp[3+i]==1 && fp[6+i]==1){return 1;} }
+	for(i=0;i<=2;i+=2){ if(fp[i]==1 && fp[4]  ==1 && fp[8-i]==1){return 1;} }
 
-	if(fp[0]==1 && fp[3]==1 && fp[6]==1){return 1;}
-	if(fp[1]==1 && fp[4]==1 && fp[7]==1){return 1;}
-	if(fp[2]==1 && fp[5]==1 && fp[8]==1){return 1;}
+	for(i=0;i<=6;i+=3){ if(fp[i]==2 && fp[1+i]==2 && fp[2+i]==2){return 2;} }
+	for(i=0;i<=2;i+=1){ if(fp[i]==2 && fp[3+i]==2 && fp[6+i]==2){return 2;} }
+	for(i=0;i<=2;i+=2){ if(fp[i]==2 && fp[4]  ==2 && fp[8-i]==2){return 2;} }
+}
 
-	if(fp[0]==1 && fp[4]==1 && fp[8]==1){return 1;}
-	if(fp[2]==1 && fp[4]==1 && fp[6]==1){return 1;}
-
-
-	if(fp[0]==2 && fp[1]==2 && fp[2]==2){return 2;}
-	if(fp[3]==2 && fp[4]==2 && fp[5]==2){return 2;}
-	if(fp[6]==2 && fp[7]==2 && fp[8]==2){return 2;}
-
-	if(fp[0]==2 && fp[3]==2 && fp[6]==2){return 2;}
-	if(fp[1]==2 && fp[4]==2 && fp[7]==2){return 2;}
-	if(fp[2]==2 && fp[5]==2 && fp[8]==2){return 2;}
-
-	if(fp[0]==2 && fp[4]==2 && fp[8]==2){return 2;}
-	if(fp[2]==2 && fp[4]==2 && fp[6]==2){return 2;}
-};
 
 //complite:добавить норм push up
 //добавить выбор игры с компом или с игроком
