@@ -4,7 +4,6 @@ var pop_up = document.getElementById('pop_up');
 var wrapper = document.getElementById('wrapper');
 
 var player = 1;
-
 function checkPos(pos){
 	if(pos == 1 ||pos == 2) return 0;
 	else return 1;
@@ -40,11 +39,13 @@ function WinAlert(pl){
 		writePlayer.style.opacity = "0";
 	}else if(pl=="R"){
 		pop_up.style.background="yellow";
+		pop_up.style.color="black";
 		pop_up.innerHTML="This place is reserved<br><span>Click for close</span>";
 		pop_up.onclick = function(){
 			pop_up.style.opacity = "0";
 			pop_up.style.display="none";
 			pop_up.style.background="green";
+			pop_up.style.color="white";
 		}
 	}
 }
@@ -89,5 +90,6 @@ function checkWin(fp){
 
 
 //complite:добавить норм push up
+//режим с поворотом wrapper
 //добавить выбор игры с компом или с игроком
 //написать фнц компа
