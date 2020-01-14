@@ -33,7 +33,7 @@ function refresh(){
 function WinAlert(pl){
 	pop_up.style.display="block";
 	pop_up.style.opacity = "1";
-	if(pl=="X" || pl=="0"){
+	if(pl=="X" || pl=="O"){
 		pop_up.innerHTML="Winner is "+pl+"<br><span>Click for restarting</span>";
 		pop_up.onclick = function(){refresh();};
 		wrapper.style.opacity = "0";
