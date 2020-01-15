@@ -1,1 +1,19 @@
-
+*{
+	box-sizing: border-box;
+}
+.wrapper{
+	width: 300px;
+	position: absolute;
+	top: 52%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+input{
+	width: 100%;
+	
+}
+button{
+	width: 100%;
+	margin: 0 auto;
+}

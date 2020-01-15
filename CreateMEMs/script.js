@@ -11,7 +11,7 @@ document.getElementById('btn').onclick = function(){
 	ctx.fillRect(0,0,300,200);
 	ctx.fillStyle = "white";
 	ctx.font = "30px Arial";
-	ctx.fillText(text,70,100);
+	ctx.fillText(text,20,100);
 };
 
 function getImg(){
@@ -21,3 +21,7 @@ function getImg(){
     link.click();
 }
 
+//выбор размера картинки
+//выбор фона
+//выбор вырвнивание текста
+//
