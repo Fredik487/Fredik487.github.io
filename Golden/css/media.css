@@ -265,8 +265,8 @@ form input{
 }
 .footer span {
     width: 270px;
-	grid-row: 2/3;
-}
+    grid-row: 2/3;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px){
@@ -293,23 +293,7 @@ form input{
     display: grid;
     grid-template-columns: repeat(2,290px);}
 }
-@media screen and (min-width: 481px) and (max-width: 640px){
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px){
-
-}
-
-@media screen and (min-width: 992px) and (max-width: 1024px){
-
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1200px){
-
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1600px){
+@media screen and (min-width: 1200px) and (max-width: 1900px){
 	.header{background: url(../images/Bg-Header-min.png) no-repeat 50% 0%;}
 
 }
