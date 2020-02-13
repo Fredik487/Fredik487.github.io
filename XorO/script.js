@@ -61,9 +61,9 @@ wrapper.addEventListener('click',function(e)
 		wrapper.style.background = "#850000";
 		if(freepos[pos] == 1){el.innerHTML = "X";}
 		else{el.innerHTML = "O";}
-		if(checkWin(freepos) == 1){
+		if(checkWin(freepos,1) == 1){
 			WinAlert("X");
-		}else if(checkWin(freepos) == 2){
+		}else if(checkWin(freepos,2) == 2){
 			WinAlert("O");
 		}
 	}
@@ -77,15 +77,11 @@ wrapper.addEventListener('mouseover',function(e)
 	}
 );
 
-function checkWin(fp){
+function checkWin(fp,n){
 	var i;
-	for(i=0;i<=6;i+=3){ if(fp[i]==1 && fp[1+i]==1 && fp[2+i]==1){return 1;} }
-	for(i=0;i<=2;i+=1){ if(fp[i]==1 && fp[3+i]==1 && fp[6+i]==1){return 1;} }
-	for(i=0;i<=2;i+=2){ if(fp[i]==1 && fp[4]  ==1 && fp[8-i]==1){return 1;} }
-
-	for(i=0;i<=6;i+=3){ if(fp[i]==2 && fp[1+i]==2 && fp[2+i]==2){return 2;} }
-	for(i=0;i<=2;i+=1){ if(fp[i]==2 && fp[3+i]==2 && fp[6+i]==2){return 2;} }
-	for(i=0;i<=2;i+=2){ if(fp[i]==2 && fp[4]  ==2 && fp[8-i]==2){return 2;} }
+	for(i=0;i<=6;i+=3){ if(fp[i]==n && fp[1+i]==n && fp[2+i]==n){return n;} }
+	for(i=0;i<=2;i+=1){ if(fp[i]==n && fp[3+i]==n && fp[6+i]==n){return n;} }
+	for(i=0;i<=2;i+=2){ if(fp[i]==n && fp[4]  ==n && fp[8-i]==n){return n;} }
 }
 
 
