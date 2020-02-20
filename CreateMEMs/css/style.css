@@ -4,14 +4,13 @@
 .wrapper{
 	width: 300px;
 	position: absolute;
-	top: 52%;
+	top: 48%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	text-align: center;
 }
 input{
-	width: 100%;
-	
+	width: 100%;	
 }
 button{
 	width: 100%;
