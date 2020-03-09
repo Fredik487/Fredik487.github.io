@@ -11,7 +11,7 @@
 	background: red;
 }
 .wrapper__main{
-	height: 100%;
+	height: 96%;
 	padding: 2% 0;
 	background: grey;
 }
@@ -34,7 +34,7 @@
 	font-size: 1.1rem;
 }
 .menu__items:last-child{
-	margin-top: 25%;
+	margin: 25% 0 0 0;
 }
 .menu__items a{
 	display: block;
