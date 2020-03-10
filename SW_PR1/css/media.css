@@ -3,6 +3,16 @@
 
 
 @media screen and (min-width: 481px) and (max-width: 768px){
+	.menu__items {
+	    width: 265px;
+	    height: 50px;
+	    margin: 0 auto 5vh;
+	    border-radius: 10px;
+	}
+	.menu__items:last-child {
+	    width: 215px;
+	    margin: 10vh auto 0;
+	}
 }
 
 
