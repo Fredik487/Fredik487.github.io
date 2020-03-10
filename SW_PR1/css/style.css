@@ -5,6 +5,7 @@
 	--white:#F5EAEA;
 	--green:#7FCD91;
 	--grey:#5B5656;
+	--text:#0D0C0C;
 }
 .wrapper{
 	min-width: 320px;
@@ -51,7 +52,7 @@
 	height: 100%;
 	text-decoration: none;
 	text-align: center;
-	color: var(--grey);
+	color: var(--text);
 	display: grid;
 	grid-template-columns: 50px 215px;
 }
@@ -70,6 +71,7 @@
 }
 .menu__items:last-child .items__text{
 	width: 70%;
+	margin-left: 10px;
 }
 
 .items__num{
@@ -88,7 +90,7 @@
 	width: 209px;
 	height: 100%;
 	line-height: 50px;
-	color: var(--grey);
+	color: var(--text);
 	text-align: center;
 }
 
@@ -100,7 +102,20 @@ footer{
 .footer__btn{
 	height: 40px;
 	min-width: 135px;
-	width: 200px;
-	line-height: 50px;
+	width: 135px;
+	line-height: 40px;
+	text-align: center;
 	background: var(--white);
+	border-radius: 0 10px 10px 0;
+	padding-left: 5px;
+	display: grid;
+	grid-template-columns: 25px 105px;
+}
+.footer__btn img{
+	height: 25px;
+	width: 25px;
+	align-self: center;
+}
+.btn__text{
+	width: 100%;
 }
