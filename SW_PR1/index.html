@@ -8,8 +8,8 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
-<body>
-<div class="wrapper">
+<body onload="onLoad()">
+<div class="wrapper"> 
 	<div class="wrapper__head">Практичне завдання</div>
 	<main class="wrapper__main">
 		<div class="main__menu">
@@ -56,10 +56,27 @@
 	<footer>
 		<div class="footer__btn">
 			<img src="img/log-out-icon-png-2.png" alt="log-out">
-			<div class="btn__text">Вийти</div>
+			<div class="btn__text" onclick="exit()">Вийти</div>
 		</div>
 	</footer>
 	
 </div>
 </body>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script>
+
+            function onLoad()
+            {
+                  document.addEventListener("deviceready", onDeviceReady, true);
+            }
+	function exit(){
+		if (navigator.app) {
+	    		navigator.app.exitApp();
+		}else if(navigator.device){
+	    		navigator.device.exitApp();
+		}else{
+	    		window.close();
+		}
+	}
+</script>
 </html>
