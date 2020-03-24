@@ -1,0 +1,20 @@
+h1{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+h1:before,h1:after{
+	content: "";
+	display: inline-block;
+	height: 5px;
+	width: 44%;
+	background: black;
+	vertical-align: middle;
+
+}
+h1:before{
+	margin-right: 5px;
+}
+h1:after{
+	margin-left: 5px;
+}
