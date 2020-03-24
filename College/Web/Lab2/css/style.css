@@ -90,25 +90,7 @@ h2:hover:after{
 	opacity: 1;
 	transition: 1s;
 }
-.detail:hover + span{
-	display: inline-block;
-	position:absolute;
-	top: 0;
-	left: 150px;
-	animation: 0.5s show;
-	transition:1s ease;
-}
-@keyframes show{
-	0%{
-		opacity: 0;
-	}
-	50%{
-		opacity: 0.5;
-	}
-	100%{
-		opacity: 1;
-	}
-}
+
 
 
 .Works{
