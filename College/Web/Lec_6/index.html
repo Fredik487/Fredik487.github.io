@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML</title>
+	<meta charset = "UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+<div class="four_border"></div>
+<div class="wrapper">
+	<div class="round round_1"></div>
+	<div class="round round_2"></div>
+</div>
+<div class="wrapper_btns">
+        <div class="btns btns__play-pause">
+            <p>Checkbox</p>
+            <input type="checkbox" class="check_inpt" id="check_inpt">
+            <label for="check_inpt" class="check_btn"></label>
+            
+            
+        </div>  
+        <div class="btns btns__btn-js">
+        	<p>Button JS</p>
+        	<button class="btn" onclick="this.classList.toggle('paused');"></button>
+        </div>
+</div>
+<script src = "script.js"></script>
+</body>
+</html>
