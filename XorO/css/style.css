@@ -43,6 +43,14 @@ header h1{
 	text-align: center;
 	font-size: 30px;
 }
+
+.menu__items a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+}
 .not{
 	background: #d5c9c9;
 	transition: 0.5s;
@@ -52,7 +60,7 @@ header h1{
 }
 .not:hover{
 	transition: 0.5s;
-	animation: not 0.5s ease 1;
+	animation: not 0.5s ease infinity;
 }
 
 @keyframes not{
@@ -66,13 +74,8 @@ header h1{
 		transform:translateX(-20px);
 	}
 }
-.menu__items a{
-	display: block;
-	height: 100%;
-	width: 100%;
-	text-decoration: none;
-	color: white;
-}
+
+
 .player{
 	width: 120px;
 	height: 20px;

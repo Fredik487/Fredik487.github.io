@@ -9,19 +9,27 @@
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-<div id="player">Now do is X</div>
-<div id="wrapper">
-	<button class="btn" id="btn1"></button>
-	<button class="btn" id="btn2"></button>
-	<button class="btn" id="btn3"></button>
-	<button class="btn" id="btn4"></button>
-	<button class="btn" id="btn5"></button>
-	<button class="btn" id="btn6"></button>
-	<button class="btn" id="btn7"></button>
-	<button class="btn" id="btn8"></button>
-	<button class="btn" id="btn9"></button>
+<div class="wrapper">
+	<div id="player">Now do is X</div>
+	<div class="wrapper-score">
+		<div class="score" id="score-X">score-X: 0</div>
+		<div class="score" id="score-II">score-II: 0</div>
+	</div>
+	<div id="wrapper_btn">
+		<button class="btn" id="btn1"></button>
+		<button class="btn" id="btn2"></button>
+		<button class="btn" id="btn3"></button>
+		<button class="btn" id="btn4"></button>
+		<button class="btn" id="btn5"></button>
+		<button class="btn" id="btn6"></button>
+		<button class="btn" id="btn7"></button>
+		<button class="btn" id="btn8"></button>
+		<button class="btn" id="btn9"></button>
+	</div>
+	<div class="reset" onclick="sessionStorage.clear();getWins('X');getWins('II');this.style.background='green';">Reset Score</div>
+	<div id="pop_up"></div>
 </div>
-<div id="pop_up"></div>
+
 <script src = "New.js"></script>
 </body>
 </html>

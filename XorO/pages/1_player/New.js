@@ -1,10 +1,13 @@
 var freepos = [0,0,0,0,0,0,0,0,0];
 var writePlayer = document.getElementById('player');
 var pop_up = document.getElementById('pop_up');
-var wrapper = document.getElementById('wrapper');
+var wrapper = document.getElementById('wrapper_btn');
+var scoreX = document.getElementById('score-X');
+var scoreII = document.getElementById('score-II');
 
 var player = 1;
-
+getWins("X");
+getWins("II");
 
 var allposition = 9;
 function checkFreePos(pos){
@@ -21,10 +24,36 @@ function checkFreePos(pos){
 	}else return;
 }
 
+function addWins(pl){
+	let score = sessionStorage.getItem(pl);
+	if(score==null){
+		sessionStorage.setItem(pl, 0);
+	}
+	score = sessionStorage.getItem(pl);
+	score=parseInt(score);
+	score+=1;
+	sessionStorage.setItem(pl, score);
+	
+}
+function getWins(pl){
+	let score = sessionStorage.getItem(pl);
+	if(score==null){
+		sessionStorage.setItem(pl, 0);
+	}
+	if(pl="X"){
+		scoreX.innerHTML="score-"+pl+": "+parseInt(sessionStorage.getItem(pl));
+	}
+	if(pl="II"){
+		scoreII.innerHTML="score-"+pl+": "+parseInt(sessionStorage.getItem(pl));
+	}
+	
+
+}
+
+
 function II(){
 	IIpos = Math.round(Math.random()*8);
 	if(checkPos(freepos[IIpos])){
-		console.log(IIpos);
 		return IIpos;
 	}else{
 		
@@ -65,6 +94,8 @@ function WinAlert(pl){
 	pop_up.style.color="white";
 	pop_up.style.opacity = "0.9";
 	if(pl=="X" || pl=="II"){
+		addWins(pl);
+		getWins(pl);
 		pop_up.innerHTML="Winner is "+pl+"<br><span>Click for restarting</span>";
 		pop_up.onclick = function(){refresh();};
 		writePlayer.style.opacity = "0";
@@ -107,6 +138,7 @@ wrapper.addEventListener('click',function(e)
 			for (let i = 0; i<9; i++) {
 				if(freepos[i]==2){
 					document.getElementById('btn'+(i+1)).innerHTML = "II";
+
 				}
 			}
 			if(checkWin(freepos,1) == 1){
