@@ -89,12 +89,12 @@ body{box-sizing: border-box;}
 	display: none;
 	opacity: 0;
 	width: 500px;
-	height: 70px;
+	height: 80px;
 	border-radius: 20px;
 	background: green;
 	color: white;
 	position: absolute;
-	top: 60%;
+	top: 52%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	transition: all 0.3s;
