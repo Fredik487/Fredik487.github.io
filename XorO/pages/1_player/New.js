@@ -10,7 +10,14 @@ var allposition = 9;
 function checkFreePos(pos){
 	if(freepos[pos] == 1 || freepos[pos] == 2){allposition-=1;console.log("pos:",allposition);}
 	if(allposition == 0){
-		writePlayer.innerHTML = "End game";WinAlert("D");
+		writePlayer.innerHTML = "End game";
+		if(checkWin(freepos,1) == 1){
+			WinAlert("X");
+		}else if(checkWin(freepos,2) == 2){
+			WinAlert("II");
+		}else{
+			WinAlert("D");
+		}
 	}else return;
 }
 
