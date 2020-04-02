@@ -1,2 +1,5 @@
 @media screen and (min-width: 320px) and (max-width: 512px){
+	#pop_up{
+		width: 90%;
+	}
 }
