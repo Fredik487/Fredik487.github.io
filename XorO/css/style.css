@@ -44,7 +44,27 @@ header h1{
 	font-size: 30px;
 }
 .not{
+	background: #d5c9c9;
+	transition: 0.5s;
+}
+.not a{
 	cursor: not-allowed;
+}
+.not:hover{
+	transition: 0.5s;
+	animation: not 0.5s ease 1;
+}
+
+@keyframes not{
+	25%{
+		transform: translateX(20px);
+	}
+	50%{
+		transform: translateX(0px);
+	}
+	75%{
+		transform:translateX(-20px);
+	}
 }
 .menu__items a{
 	display: block;
