@@ -73,17 +73,17 @@ body{box-sizing: border-box;}
 	border-right: none;
 	border-top: none;
 }
-.reset{
+.reset,.reload{
 	width: 100px;
 	height: 25px;
-	padding: 5px;
+	padding: 10px;
 	background: black;
 	color: white;
 	text-align: center;
 	font-size: 1.1rem;
 	cursor: pointer;
 	border-radius: 20px;
-	margin: 25px auto 10px;
+	margin: 15px auto 10px;
 }
 #pop_up{
 	display: none;
