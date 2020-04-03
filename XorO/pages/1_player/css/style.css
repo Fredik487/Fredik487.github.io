@@ -95,7 +95,7 @@ body{box-sizing: border-box;}
 	background: green;
 	color: white;
 	position: absolute;
-	top: 52%;
+	top: 56%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	transition: all 0.3s;
