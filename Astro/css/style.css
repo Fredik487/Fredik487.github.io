@@ -1,0 +1,31 @@
+header{
+	height: 50px;
+	padding: 15px;
+	background: #333945;
+	text-align: center;
+	line-height: 10px;
+	color: #fcfaf1;
+}
+.wrapper{
+	width: 185px;
+	margin:0  auto;
+	display: grid;
+	justify-items: center;
+}
+.inpt{
+	height: 15px;
+	padding: 5px;
+}
+#Dh,#findDh,#textb{
+	width: 135px;
+	min-height: 18px;
+	text-align: center;
+	margin: 5px auto;
+	padding: 10px 10px 5px 10px;
+	box-shadow: 4px 4px 10px rgba(145,145,145,0.4);
+	line-height: 18px;
+}
+.wrapper h3{
+	width: 100%;
+	text-align: left;
+}

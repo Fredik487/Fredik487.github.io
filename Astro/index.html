@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Astro</title>
+	<meta charset = "UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	
+</head>
+<body>
+	<header>
+		<h1>Astro</h1>
+	</header>
+	<div class="wrapper">
+		<h3>b:</h3>
+		<input type="text" id="b" class="inpt" onchange="b(this.value)" placeholder="Склонение">
+		<div id="textb"></div>
+	</div>
+	<div class="wrapper wrapper-findDhFromLat">
+		<h3>Find Dh from latitude:</h3>
+		<input type="text" id="inpt" class="inpt" onchange="NDhr2(rad(this.value))" placeholder="Широта">
+		<div id="Dh"></div>
+	</div>
+	<div class="wrapper wrapper-findLat">
+		<h3>Find latitude from Dh:</h3>
+		<input type="text" id="inpt2" class="inpt" onchange="findDhr(this.value)" placeholder="Долгота дня">
+		<div id="findDh"></div>
+	</div>
+	
+<script src = "script.js"></script>
+</body>
+</html>
