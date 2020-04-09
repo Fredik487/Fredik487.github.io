@@ -69,11 +69,12 @@ function findDhr(Dh){
 	parseInt(Dh);
 	//console.clear();
 	show(findDh,"");
-	for (var i = 1; i<=90; i+=0.1) {
+	for (var i = -90; i<=90; i+=0.1) {
 		let v = NDhr(rad(i),bb);
 		if(v.toFixed(2)==Dh){
-			let textDh ="Широта:"+ i.toFixed(2);
-			show(findDh,textDh);
+			let textDh ="Широта:"+ i.toFixed(3)+"<br>";
+			findDh.innerHTML+=textDh;
+			//show(findDh,textDh);
 			console.log(i.toFixed(1)+":"+v.toFixed(2));
 		}
 	}
