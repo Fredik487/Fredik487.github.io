@@ -1,0 +1,77 @@
+:root{
+	--main_color:#5F9EA0;
+}
+.calc{
+	height: 370px;
+	width: 255px;
+	border: 3px solid var(--main_color);
+	border-radius: 10px;
+	margin: 135px auto;
+}
+.name{
+	height: 36px;
+	background: var(--main_color);
+	margin: 10px 0;
+	padding:0 10px;
+	color: white;
+	font-weight: bold;
+	line-height: 36px;
+	text-align: right;
+}
+.inpt{
+	display: block;
+	height: 30px;
+	width: 240px;
+	color: var(--main_color);
+	font-weight: bold;
+	text-align: right;
+	border: 3px solid var(--main_color);
+	border-radius: 6px;
+	outline: none;
+	margin: 0 auto;
+	padding: 5px;
+}
+.generator{
+	height: 30px;
+	width: 85px;
+	background: var(--main_color);
+	margin: 10px 10px 10px 0;
+	float: right;
+}
+.btns{
+	height: 230px;
+	width: 225px;
+	clear: right;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+.btn{
+	height: 45px;
+	width: 45px;
+	border: 3px solid var(--main_color);
+	border-radius: 10px;
+	outline: none;
+	background: white;
+	color: var(--main_color);
+	font-weight: bold;
+	line-height: 37px;
+	margin:0 10px 15px 0;
+}
+.btn:nth-child(4n){
+	margin-right:0;
+}
+.btn:nth-child(n+13),
+.btn:nth-last-child(n+13){
+	margin-bottom:10px;
+}
+.btn:hover{
+	background:var(--main_color);
+	color: white;
+}
+.btn:active{
+	transform: translateY(-3px);
+	background:#487f81;
+	border-color: #487f81;
+	color: white;
+
+}

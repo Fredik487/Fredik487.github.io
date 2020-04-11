@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+}
+.moon {
+	width: 600px;
+	height: 300px;
+	border: 1px solid #898989;
+	box-shadow: /*ваш код*/;
+	margin: 145px auto 0;
+}
+
+.left {
+	width: 280px;
+	float: left;
+	height: 280px;
+	padding: 10px 0 10px 20px;
+}
+.right {
+	width: 300px;
+	float: right;
+	overflow: hidden;
+	height: 300px;
+}
+p {
+	font-size: 13px;
+	margin: 20px 15px 0 20px;
+	line-height: 150%;
+	text-indent: 20px;
+}
+
+h3 {
+	text-align: right;
+	background:grey;
+	padding: 10px;
+	margin-top: 5px;
+}
