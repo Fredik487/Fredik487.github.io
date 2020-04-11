@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML</title>
+	<meta charset = "UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="normalize.css">
+</head>
+<style>
+.Change{
+	max-width: 60%;
+	margin: 10% auto 0;
+}
+.wrapper-items{
+	max-width: 1110px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,235px);
+	grid-gap: 20px;
+	margin: 0 auto;
+}
+.items{
+	min-width: 150px;
+	max-width: 250px;
+	min-height: 150px;
+	height: 100%;
+	text-align: center;
+	border: 5px solid black;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+.items:nth-child(odd){
+	background: black;
+	color: white;
+}
+.items:hover{
+	transform: translateY(-5px);
+	transition: 0.2s;
+	box-shadow:5px 5px 10px #c1c1c1; 
+}
+.items_text{
+	height: 60%;
+	line-height: 90px;
+	font-size: 30px;
+
+}
+.items a{
+	display: block;
+	width: 100%;
+	background: black;
+	padding: 10px 0;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	transition: 0.4s;
+}
+.items:nth-child(odd) a{
+	background: white;
+	color: black;
+}
+.items a:hover{
+	transform: translateY(-5px);
+	transition: 0.2s;
+}
+</style>
+<body>
+<div class="Change">
+		<h2>Виберіть завдання:</h2>
+		<div class="wrapper-items">
+			<div class="items items_1">
+				<div class="items_text">Grid(Task1)</div>
+				<a href="lec7_task-1/index.html" target="_blank">Перейти</a>
+			</div>
+			<div class="items items_2">
+				<div class="items_text">Site(Task2)</div>
+				<a href="lec7_task-2/index.html" target="_blank">Перейти</a>
+			</div>
+		</div>
+</div>
+</body>
+</html>

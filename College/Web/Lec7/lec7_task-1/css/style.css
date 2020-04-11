@@ -1,0 +1,16 @@
+.parent {
+  min-height: 20px;
+  width: 440px;
+  background: #FF6600;
+  margin: 100px auto;
+}
+.rows {
+  width: 100px;
+  height: 100px;
+  background: #00F1FF;
+  margin: 5px;
+  float: left;
+}
+.clearfix{
+	clear: both;
+}

@@ -1,0 +1,41 @@
+.fullwrap,.header,
+.wrap,.main,
+.saidbar,.footer{
+	border: 2px solid black;
+}
+.header,.wrap,.footer{
+	width: 415px;
+	margin: 0 auto;
+}
+
+
+.fullwrap{
+	height:475px;
+	width: 435px;
+	margin:100px auto;
+	padding: 7px 9px 15px 7px;
+}
+.header{
+	height: 57px;
+}
+.wrap{
+	height: 285px;
+	margin:9px auto 8px;
+	padding: 7px 5px 10px;
+}
+.main{
+	width: 230px;
+	height: 265px;
+	float: left;
+	margin-right: 20px;
+}
+.saidbar{
+	width: 150px;
+	height: 265px;
+	float:left;
+}
+.footer{
+	clear: both;
+	height: 90px;
+
+}
