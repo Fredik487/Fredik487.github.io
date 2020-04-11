@@ -55,7 +55,7 @@
 	color: var(--main_color);
 	font-weight: bold;
 	line-height: 37px;
-	margin:0 10px 15px 0;
+	margin: 0 9px 15px 0;
 }
 .btn:nth-child(4n){
 	margin-right:0;
