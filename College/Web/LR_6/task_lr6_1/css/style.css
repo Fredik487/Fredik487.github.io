@@ -4,8 +4,8 @@
 .moon {
 	width: 600px;
 	height: 300px;
-	border: 1px solid #898989;
-	box-shadow: /*ваш код*/;
+	border: 10px solid white;
+	box-shadow:0 0 10px #898989;
 	margin: 145px auto 0;
 }
 
@@ -13,7 +13,7 @@
 	width: 280px;
 	float: left;
 	height: 280px;
-	padding: 10px 0 10px 20px;
+	padding: 10px;
 }
 .right {
 	width: 300px;
@@ -23,7 +23,7 @@
 }
 p {
 	font-size: 13px;
-	margin: 20px 15px 0 20px;
+	margin: 20px 0;
 	line-height: 150%;
 	text-indent: 20px;
 }
