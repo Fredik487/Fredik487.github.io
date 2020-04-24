@@ -34,6 +34,7 @@ body{
 	background: white;
 	position: sticky;
 	top: 15px;
+	z-index: 99;
 }
 .menu a{
 	text-decoration: none;

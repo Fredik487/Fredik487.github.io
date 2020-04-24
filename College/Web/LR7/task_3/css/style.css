@@ -1,0 +1,132 @@
+body{
+	background: #3c3c3c;
+}
+@font-face {
+    font-family: 'Bitter_bold';
+    src: url('../fonts/Bitter-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bitter';
+    src: url('../fonts/Bitter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.wrapper{
+	height: 460px;
+	width: 940px;
+	margin:15vh auto 0;
+}
+.menu-container{
+	height: 390px;
+	width: 940px;
+	background: #fff;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+.menu_img{
+	width: 330px;
+	height: 390px;
+	background: url(../burger.jpg) no-repeat 60% 100% / 200%;
+	position: relative;
+}
+.cover{
+	height: 215px;
+	width: 105%;
+	padding: 40px 65px 30px;
+	background: blue;
+	transform: translateX(-25px);
+	position: relative;
+	top:145px;
+	background: #000;
+	text-transform: uppercase;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+.cover_name{
+	width: 155px;
+	font-family:"Bitter_bold";
+	font-size: 35px;
+	margin: 0 auto;
+}
+.cover_price{
+
+}
+.cover_price span{
+	color: yellow;
+}
+
+
+
+.menu_main{
+	padding: 40px 85px 40px 70px;
+	display: grid;
+	grid-template-rows: 25px 1fr;
+    grid-row-gap: 55px;
+    color: #343434;
+    font-size: 20px;
+}
+.main_slogan{
+	text-align: center;
+}
+.main_container_burgers{
+	text-align: center;
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	grid-template-rows: repeat(3,65px);
+	grid-column-gap: 50px;
+	grid-row-gap: 20px;
+}
+.burgers_items{
+	border-bottom: 2px solid #D5D5D5;
+	position: relative;
+}
+.burgers_items a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	color: #333;
+}
+.burgers_items:after{
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	background: #D5D5D5;
+	transform: rotate(45deg);
+	position: relative;
+	top:-4px;
+	margin: 0 auto;
+}
+.item_name{
+	text-transform: uppercase;
+}
+.item_price{
+	color: #9A9A9A;
+}
+.btn_all_menu{
+	height: 55px;
+	width: 175px;
+	background: black;
+	padding: 20px 0;
+	margin-top: 10px;
+	margin-left: calc(100% - 175px);
+	text-align: center;
+	text-transform: uppercase;
+	border: none;
+}
+.btn_all_menu a{
+	font-family:"Bitter_bold";
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	display: block;
+	height: 100%;
+	width: 100%;
+}

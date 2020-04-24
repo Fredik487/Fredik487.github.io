@@ -1,0 +1,35 @@
+
+.wrapper{
+	height: 490px;
+	width: 560px;
+	margin:15vh auto 0;
+	position: relative;
+	overflow: hidden;
+	background: #7fcdc6;
+}
+.clouds{
+    height: 135px;
+    width: 380px;
+    background: url(../water_world/clouds.svg) no-repeat 100% 100%;
+    position: relative;
+    left: 200px;
+    top: -8px;
+}
+.world{
+	height: 330px;
+	background: url(../water_world/world.svg) no-repeat 100% 100% /cover;
+}
+.ship{
+	height: 130px;
+    width: 145px;
+	background: url(../water_world/wooden-ship.svg) no-repeat 100% 100% ;
+	position: relative;
+	top: -145px;
+}
+.water{
+	height: 50px;
+    width: 100%;
+	background: url(../water_world/water.svg) no-repeat 100% 100% ;
+	position: relative;
+	top: -155px;
+}
